@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black; */
+    /*border: 1px solid black; */
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -85,4 +85,39 @@ li > a {
     color: white;
     background-color: #3882F6;
     font-weight: bold;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25%;
+}
+
+.cards img {
+    max-width: 200px;
+    height: auto;
+    border: 3px solid #3882F6;
+    border-radius: 1ch;
+}
+
+.card {
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    max-width: 200px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
 }

@@ -48,7 +48,8 @@ a {
 .content,
 .cards,
 .inner-quote,
-.credit {
+.credit,
+.action {
     display: flex;
 }
 
@@ -154,3 +155,18 @@ a {
     margin: auto;
     font-size: 24px;
 }
+
+.action {
+    margin: 5rem auto;
+    padding: 3rem 10rem;
+    border-radius: 0.5rem;
+    max-width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.action-title {
+    font-size: 26px;
+}
+

@@ -45,8 +45,15 @@ a {
 .header,
 .menu,
 .hero,
-.content {
+.content,
+.cards {
     display: flex;
+}
+
+.hero,
+.cards,
+.card {
+    flex-wrap: wrap;
 }
 
 .header {
@@ -71,7 +78,6 @@ a {
 .hero {
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     padding: 5rem 10rem;
 }
 
@@ -79,9 +85,13 @@ a {
     max-width: 35vw;
 }
 
+.title,
+.info-title {
+    font-weight: bolder;
+}
+
 .title {
     font-size: 48px;
-    font-weight: bolder;
 }
 
 .subtitle {
@@ -94,4 +104,31 @@ a {
     border-radius: 0.5rem;
     margin: 0.5rem 0;
     padding: 0.5rem 2rem;
+}
+
+.content {
+    gap: 3rem;
+    padding: 3rem 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 36px;
+}
+
+.cards {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    flex: 0 1 250px;
+}
+
+.card > img {
+    border-radius: 0.5rem;
+    border: 3px solid #3882F6;
+    width: 100%;
+    height: auto;
 }
